@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=CNJkX9rYI8U
+
+create project folder
+vercel-deployment
+
+md client
+md server
+
+ctrl+j to open terminal
+cd server
+
+npm init -y
+npm install express nodemon
+
+create index.js
+
+---
+cd client
+npx create-react-app@latest .
+
+copy gitignore from client folder to server folder
+
+add vercel.json to server gitignore file
+
+---
+
+echo "# vercel-deployment" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Erik-Varga/vercel-deployment.git
+git push -u origin main
+
+git add .
+git commit -m "update"
+git push origin main
